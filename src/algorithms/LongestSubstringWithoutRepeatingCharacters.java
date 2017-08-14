@@ -10,7 +10,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         int maxLength = 0;
         int q = 0;  //用来记录与当前所遍历的字符重复的字符下标
-        int count = 0;  //用来记录是s[q]之后非重复字符数
+        int count = 0;  //用来记录s[q]之后非重复字符数
         Map<Character, Integer> temp = new HashMap<>();
         int sLength = s.length();
         for (int i = 0; i < sLength; i++) {
