@@ -14,11 +14,10 @@ public class ZigZagConversion {
         for (int i = 1, stepMid = stepInitial - 2; i < numRows - 1; i++, stepMid -= 2) {
             boolean isOdd = true;
             for (int j = i; j < s.length(); ) {
+                result.append(s.charAt(j));
                 if (isOdd) {
-                    result.append(s.charAt(j));
                     j += stepMid;
                 } else {
-                    result.append(s.charAt(j));
                     j += 2 * i;
                 }
                 isOdd = !isOdd;
