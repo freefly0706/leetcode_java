@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.oneTofifty;
 
 import java.util.HashMap;
 import java.util.Map;

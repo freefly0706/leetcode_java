@@ -1,5 +1,5 @@
 /* -*- coding: UTF-8 -*- */
-package algorithms;
+package algorithms.oneTofifty;
 
 public class PalindromeNumber {
     public boolean isPalindrome(int x) {

@@ -1,5 +1,5 @@
 /* -*- coding: UTF-8 -*- */
-package algorithms;
+package algorithms.oneTofifty;
 
 public class ZigZagConversion {
     public String convert(String s, int numRows) {
