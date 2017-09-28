@@ -6,7 +6,6 @@ public class LongestCommonPrefix {
         if (strs.length == 0) {
             return "";
         }
-        StringBuilder res = new StringBuilder();
         int shortestStrIndex = 0;
         int shortestLen = strs[0].length();
         for (int i = 1; i < strs.length; i++) {
@@ -15,15 +14,14 @@ public class LongestCommonPrefix {
                 shortestLen = strs[i].length();
             }
         }
-        String shortestStr = strs[shortestStrIndex];
-        for (int i = 0; i < shortestLen; i++) {
-            for (int j = 0; j < strs.length; j++) {
-                if (shortestStr.charAt(i) != strs[j].charAt(i)) {
-                    return res.toString();
-                }
+        String res = strs[shortestStrIndex];
+        for (int i = 0; i < strs.length; ) {
+            if (!strs[i].substring(0, shortestLen).equals(res.substring(0, shortestLen))) {
+                shortestLen--;
+                continue;
             }
-            res.append(shortestStr.charAt(i));
+            i++;
         }
-        return res.toString();
+        return res.substring(0, shortestLen);
     }
 }
