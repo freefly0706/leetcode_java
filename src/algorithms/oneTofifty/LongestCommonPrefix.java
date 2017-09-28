@@ -3,10 +3,10 @@ package algorithms.oneTofifty;
 
 public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
-        StringBuilder res = new StringBuilder();
         if (strs.length == 0) {
             return "";
         }
+        StringBuilder res = new StringBuilder();
         int shortestStrIndex = 0;
         int shortestLen = strs[0].length();
         for (int i = 1; i < strs.length; i++) {
