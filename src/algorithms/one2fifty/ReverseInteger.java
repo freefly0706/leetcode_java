@@ -1,5 +1,5 @@
 /* -*- coding: UTF-8 -*- */
-package algorithms.oneTofifty;
+package algorithms.one2fifty;
 
 public class ReverseInteger {
     public int reverse(int x) {

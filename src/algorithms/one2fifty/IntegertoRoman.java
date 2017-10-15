@@ -1,5 +1,5 @@
 /* -*- coding: UTF-8 -*- */
-package algorithms.oneTofifty;
+package algorithms.one2fifty;
 
 public class IntegertoRoman {
     public String intToRoman(int num) {

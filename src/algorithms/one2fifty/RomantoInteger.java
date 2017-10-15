@@ -1,5 +1,5 @@
 /* -*- coding: UTF-8 -*- */
-package algorithms.oneTofifty;
+package algorithms.one2fifty;
 
 import java.util.HashMap;
 import java.util.Map;

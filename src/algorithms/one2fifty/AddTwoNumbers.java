@@ -1,4 +1,4 @@
-package algorithms.oneTofifty;
+package algorithms.one2fifty;
 
 /**
  * Created by fly on 8/11/17.
