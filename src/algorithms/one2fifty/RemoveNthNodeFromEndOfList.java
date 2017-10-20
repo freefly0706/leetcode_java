@@ -14,16 +14,14 @@ import test.ListNode;
 
 public class RemoveNthNodeFromEndOfList {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode p = head, q = null;
+        ListNode p = head, q = head;
         for (int i = 0; i < n; i++) {
             p = p.next;
         }
         if (p == null) {
             return head.next;
         }
-        p = p.next;
-        q = head;
-        while (p != null) {
+        while (p.next != null) {
             p = p.next;
             q = q.next;
         }
