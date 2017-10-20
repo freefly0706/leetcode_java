@@ -18,16 +18,15 @@ public class RemoveNthNodeFromEndOfList {
         for (int i = 0; i < n; i++) {
             p = p.next;
         }
-        if (p != null) {
+        if (p == null) {
+            return head.next;
+        }else{
             p = p.next;
             q = head;
-        }
-        while (p != null) {
-            p = p.next;
-            q = q.next;
-        }
-        if (q == null) {
-            return head.next;
+            while (p != null) {
+                p = p.next;
+                q = q.next;
+            }
         }
         q.next = q.next.next;
         return head;
