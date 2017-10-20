@@ -20,13 +20,12 @@ public class RemoveNthNodeFromEndOfList {
         }
         if (p == null) {
             return head.next;
-        }else{
+        }
+        p = p.next;
+        q = head;
+        while (p != null) {
             p = p.next;
-            q = head;
-            while (p != null) {
-                p = p.next;
-                q = q.next;
-            }
+            q = q.next;
         }
         q.next = q.next.next;
         return head;
