@@ -27,7 +27,7 @@ public class _3Sum {
                 } else if (sum < 0) {
                     low++;
                 } else {
-                    if (low == i + 1) {
+                    if (low == i + 1) {  //如果当前最小值加上当前最大值比target大,则当前最大值不必再参加后续计算
                         highBound--;
                     }
                     high--;
