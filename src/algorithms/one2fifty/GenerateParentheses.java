@@ -12,7 +12,7 @@ public class GenerateParentheses {
     }
 
     private void backTracking(char[] pair, int n, int index, int left, int right, List<String> res) {
-        if (index == 2 * n) {
+        if (right == n) {
             res.add(new String(pair));
             return;
         }
