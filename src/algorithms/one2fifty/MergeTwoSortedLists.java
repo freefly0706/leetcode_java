@@ -1,7 +1,6 @@
 /* -*- coding: UTF-8 -*- */
 package algorithms.one2fifty;
 
-import test.ListNode;
 
 public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

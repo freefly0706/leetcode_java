@@ -1,7 +1,6 @@
 /* -*- coding: UTF-8 -*- */
 package algorithms.one2fifty;
 
-import test.ListNode;
 
 /**
  * Definition for singly-linked list.

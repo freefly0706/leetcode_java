@@ -1,5 +1,5 @@
 package algorithms.one2fifty;
-import test.ListNode;
+
 /**
  * Created by fly on 8/11/17.
  */
