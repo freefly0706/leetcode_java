@@ -23,9 +23,8 @@ public class LetterCombinationsOfAPhoneNumber {
             return;
         }
         int char2int = digits.charAt(index) - '0';
-        for (int i = 0; i < digitCorString[char2int].length(); i++) {
-            backTracking(combination + digitCorString[char2int].charAt(i), digitCorString,
-                    index + 1, digits, digitsLength, res);
+        for (char c : digitCorString[char2int].toCharArray()) {
+            backTracking(combination + c, digitCorString, index + 1, digits, digitsLength, res);
         }
     }
 }
