@@ -16,7 +16,7 @@ public class LongestValidParentheses {
                 int left = i - 1 - L[i - 1];
                 if (L[i - 1] >= 2 && left >= 0 && s.charAt(left) == '(') {
                     L[i] = L[i - 1] + 2;
-                    if (left - 1 >= 0) {
+                    if (left > 0) {
                         L[i] += L[left - 1];
                     }
                 } else if (s.charAt(i - 1) == '(') {
