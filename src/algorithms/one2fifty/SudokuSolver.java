@@ -14,7 +14,7 @@ public class SudokuSolver {
         }
         if (board[row][column] == '.') {
             for (char num = '1'; num <= '9'; num++) {
-                if (bindingFunction(board, row, column, num, n)) {
+                if (isValid(board, row, column, num, n)) {
                     board[row][column] = num;
                     if (backTracking(board, row, column + 1, n)) {
                         return true;
@@ -27,7 +27,7 @@ public class SudokuSolver {
         return backTracking(board, row, column + 1, n);
     }
 
-    private boolean bindingFunction(char[][] board, int row, int column, char num, int n) {
+    private boolean isValid(char[][] board, int row, int column, char num, int n) {
         for (int i = 0; i < n; i++) {
             if (board[i][column] == num) {  //检查行
                 return false;
