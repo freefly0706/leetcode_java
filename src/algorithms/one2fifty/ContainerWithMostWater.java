@@ -8,8 +8,8 @@ public class ContainerWithMostWater {
         while (left < right) {
             minBound = Math.min(height[left], height[right]);
             max = Math.max(max, minBound * (right - left));
-            while (left < height.length && height[left] <= minBound) left++;
-            while (right > 0 && height[right] <= minBound) right--;
+            while (left < right && height[left] <= minBound) left++;
+            while (right > left && height[right] <= minBound) right--;
         }
         return max;
     }
