@@ -7,8 +7,8 @@ public class MultiplyStrings {
         }
         int num1Len = num1.length(), num2Len = num2.length();
         int[] resInt = new int[num1Len + num2Len];
-        for (int i = num1Len - 1, k = 0; i >= 0; k++, i--) {
-            for (int j = num2Len - 1, m = 0; j >= 0; m++, j--) {
+        for (int i = num1Len - 1; i >= 0; i--) {
+            for (int j = num2Len - 1; j >= 0; j--) {
                 int tmp = (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
                 int p1 = i + j, p2 = p1 + 1;
                 tmp += resInt[p2];
