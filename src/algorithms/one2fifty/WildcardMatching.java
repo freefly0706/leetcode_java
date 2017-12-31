@@ -1,6 +1,7 @@
 package algorithms.one2fifty;
 
 public class WildcardMatching {
+    //贪心
     public boolean isMatch(String s, String p) {
         int sLen = s.length();
         int pLen = p.length();
@@ -23,7 +24,7 @@ public class WildcardMatching {
         return j == pLen;
     }
 
-    /*动规方法
+    /*动规
     public boolean isMatch(String s, String p) {
         int sLen = s.length();
         int pLen = p.length();
